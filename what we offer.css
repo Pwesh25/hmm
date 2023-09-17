@@ -1,0 +1,22 @@
+body {
+    background-color: blue;
+  }
+  .card-body2
+{
+    background-color: gold;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 63vh;
+}
+.card-title{
+    font: outline;
+}
+.card-body2{
+background-color:blue;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 80vh;
+
+} 

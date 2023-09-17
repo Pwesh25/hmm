@@ -1,0 +1,163 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0; /* Position on the left-hand side */
+    width: calc(40% - -300px); /* Adjust the width as needed */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 0; /* Position at the top of the popup */
+    left: 100%; /* Position at the left edge of the popup */
+    transform: translateY(0);
+    width: 100%;
+    max-width: 100%; /* Ensure the content doesn't overflow */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    height: 100%; /* Occupy the full height of the popup */
+}
+
+
+
+.popup.active {
+    display: block;
+}
+.content {
+    background-image: url(black\ background.jpg);
+    background-size: 100% auto;
+    background-position: left center;
+    min-height: 600px;
+    min-width: 500px;
+    align-items: center; /* Added align-items */
+    justify-content: center;
+}
+.left-navbar {
+    background-color:black;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.left-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.left-navbar li {
+    margin-bottom: 10px;
+}
+.left-navbar a {
+    color:rgb(182, 182, 182);
+    text-decoration: none;
+    padding: 5px;
+}
+.left-navbar a:hover {
+    background-color: #ccc;
+    color: rgb(255, 238, 0);
+}
+.left-navbar-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #eee;
+    color: #333;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+} 
+@media (max-width: 768px) {
+    .left-navbar-toggle {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.left-navbar.left-navbar-minimized {
+    width: 60px;
+}
+.left-navbar.left-navbar-minimized ul {
+    display: none;
+}
+
+.right-list {
+    text-align: left;
+    padding: 200px 300px; /* Adjust the right and left padding as needed */
+    color: white; /* Adjust the text color as needed */
+}
+
+.right-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-list li {
+    margin-bottom: 5px; /* Add spacing between navigation items */
+}
+
+.right-list a {
+    text-decoration: none;
+    color: inherit;
+}
+/* ... Other styles ... */
+
+.right-list button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(0, 123, 255, 0.2); /* Transparent blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+.right-list button:hover {
+    background-color: rgba(0, 123, 255, 0.4); /* Slightly darker on hover */
+}
+#bvn-settings-button
+ {
+    background-color: rgba(0, 123, 255, 0.2); /* Transparent blue background */
+        color: white;
+        backdrop-filter: blur(5px); /* Apply blur effect */
+    }
+    #next-of-kin-button
+ {
+    background-color: #007bff; /* Blue */
+        color: white;
+    }
+    #password-settings-button
+ {
+    background-color: #007bff; /* Blue */
+        color: white;
+    }
+
+    #notification-settings-button
+ {
+    background-color: #007bff; /* Blue */
+        color: white;
+    }
+
+    #FA-update-security-questions-button
+ {
+    background-color: #007bff; /* Blue */
+        color: white;
+    }
+    #profile-settings-button
+    {
+       background-color: #007bff; /* Blue */
+           color: white;
+       }
+    #bvn-settings-button
+     {
+     background-color: #007bff; /* Blue */
+     color: white;
+     }

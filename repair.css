@@ -1,0 +1,57 @@
+/* styles.css */
+/* Top Navbar Styles */
+.top-navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.top-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-navbar li {
+    margin-right: 10px;
+}
+
+.top-navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Left Navbar Styles */
+.left-navbar {
+    background-color: #eee;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.left-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-navbar li {
+    margin-bottom: 10px;
+}
+
+.left-navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Content Styles */
+.content {
+    margin-left: 220px; /* Adjust this value based on the left navbar width */
+    padding: 20px;
+}

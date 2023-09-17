@@ -1,0 +1,10 @@
+
+<input id="button" type="submit" value="login"><br><br>
+
+ <div class="popup" id="popup">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2> thank you!</h2>
+            <p>your were registration sucessfully.thanks!</p>
+            <a href="login.php"><button onclick="closeslide()">ok</button></a>
+        </div>
+    </div>

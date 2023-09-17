@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.profile-info {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+.privacy-settings label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.card.privacy-card {
+    flex-basis: calc(40% - 10px); /* Divide space for both cards */
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(15px); /* Apply the blur effect */
+}
+.privacy-settings h2{
+    color: white;
+}
+
+.edit-profile-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: linear-gradient(45deg, blue,black);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1; /* Ensures the link is on top of the image */
+}
+
+.profile-image {
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Required for absolute positioning */
+}
+.content {
+    background-image: url(black\ background.jpg);
+    background-size: 100% auto;
+    background-position: left center;
+    min-height: 550px;
+    min-width: 500px;
+    align-items: center; /* Added align-items */
+    justify-content: center;
+}
+.profile-card {
+    flex: 2;
+    max-width: 430px;
+    height: 600px;
+    margin: auto;
+    margin-left: 300px; /* Adjust the left margin as needed */
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+    backdrop-filter: blur(15px); /* Apply the blur effect */
+}
+legend,
+label,
+.profile-card h1{
+    color:white ;
+}
+.identification-upload {
+    position: relative;
+    display: inline-block;
+}
+#identification-image-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#identification-image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#identification-image {
+    display: none; /* Hide the file input */
+}
+/* styles.css */
+.update-profile-button {
+    background: linear-gradient(45deg, blue,black);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align cards at the top */
+    margin-top: 20px;
+}
+.card-container {
+    display: flex;
+    flex-direction: column; /* Stack the contribution and privacy cards vertically */
+    gap: 20px;
+}
+.card.contribution-card {
+    flex-basis: calc(40% - 10px); /* Divide space for both cards */
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(15px); /* Apply the blur effect */
+    border: 2px solid white;
+}
+th,
+td,
+.contribution-card h2{
+    color:white;
+}
+.contribution-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.contribution-table tr:nth-child(even) {
+    background-color: black;
+}
+/* Add this to add horizontal lines between rows */
+.contribution-table tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+        /* Add a border to the top and bottom of the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        /* Style the table headers */
+        th {
+            background-color:black;
+        }
+.print-receipt-button {
+    background: linear-gradient(45deg, blue,black);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.print-receipt-button {
+    background: linear-gradient(45deg, blue, black);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.left-navbar {
+    background-color:black;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.left-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.left-navbar li {
+    margin-bottom: 10px;
+}
+.left-navbar a {
+    color:rgb(182, 182, 182);
+    text-decoration: none;
+    padding: 5px;
+}
+.left-navbar a:hover {
+    background-color: #ccc;
+    color: rgb(255, 238, 0);
+}
+.left-navbar-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #eee;
+    color: #333;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+} 
+@media (max-width: 768px) {
+    .left-navbar-toggle {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.left-navbar.left-navbar-minimized {
+    width: 60px;
+}
+.left-navbar.left-navbar-minimized ul {
+    display: none;
+}
+
